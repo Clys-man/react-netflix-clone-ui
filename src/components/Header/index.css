@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+header{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    display: flex;
+    background: linear-gradient(to bottom,rgba(0,0,0,.7) 10%,rgba(0,0,0,0));
+    align-items: center;
+    padding: 0 30px;
+    transition: all ease 0.3s;
+}
+header.black{
+    background-color: #141414;
+}
+
+.header--logo, .header--box{
+    position: absolute;
+    margin: 10px 50px;
+}
+
+.header--logo{
+    left: 0;
+    height: 25px;
+}
+.header--logo img{
+    height: 100%;
+}
+.header--box{
+    right: 0;
+    height: 35px;
+}
+.header--box img{
+    height: 100%;
+    border-radius: 3px;
+}
+.header--buttons{
+    margin: 0px 110px;
+}
+.header--buttons li {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    float: left;
+    list-style: none;
+    text-align: center;
+    margin-right: 15px; 
+}
+.header--buttons li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    display: flex;
+    transition: all ease 0.5s;
+}
+  
+.header--buttons li a:hover {
+    text-decoration: none;
+    color:#e5e5e5;
+}
+@media (max-width: 760px){
+	.header--buttons{
+		display: none;
+	}
+}
