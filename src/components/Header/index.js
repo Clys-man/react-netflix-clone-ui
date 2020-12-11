@@ -10,11 +10,11 @@ export default ({ black }) => {
                 </a>
             </div>
             <ul className="header--buttons">
-                <li><strong><a href="#">Inicio</a></strong></li>
-                <li><a href="#">Séries</a></li>
-                <li><a href="#">Filmes</a></li>
-                <li><a href="#">Mais recentes</a></li>
-                <li><a href="#">Minha lista</a></li>
+                <li><strong><a href="#">Home</a></strong></li>
+                <li><a href="#">Series</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Most Recents</a></li>
+                <li><a href="#">My List</a></li>
             </ul>
             <div className="header--box">
                 <a href="">
