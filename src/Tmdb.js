@@ -1,6 +1,6 @@
-//KEY usada na requisição da API
+//KEY used in API request
 const API_KEY = 'd0d6231ec02e7e52e04a7a535b682ff0';
-//Base de todas as Urls usadas nas requisições
+//Base of all Urls used in requests
 const API_BASE = 'https://api.themoviedb.org/3';
 
 
@@ -13,32 +13,32 @@ export default {
         return [
             {
                 slug: 'originals',
-                title: "Originais do Netflix",
+                title: "Netflix Originals",
                 items: await basicFetch(`/discover/tv/?with_network=213&language=pt-BR&api_key=${API_KEY}`)
             },
             {
                 slug: 'trending',
-                title: "Recomendados para Você",
+                title: "Recommended for you",
                 items: await basicFetch(`/trending/all/week?language=pt-BR&api_key=${API_KEY}`)
             },
             {
                 slug: 'toprated',
-                title: "Em Alta",
+                title: "Top rated",
                 items: await basicFetch(`/movie/top_rated?&language=pt-BR&api_key=${API_KEY}`)
             },
             {
                 slug: 'action',
-                title: "Ação",
+                title: "Action",
                 items: await basicFetch(`/discover/movie?with_genres=28&language=pt-BR&api_key=${API_KEY}`)
             },
             {
                 slug: 'comedy',
-                title: "Comédia",
+                title: "Comedy",
                 items: await basicFetch(`/discover/movie?with_genres=35&language=pt-BR&api_key=${API_KEY}`)
             },
             {
                 slug: 'horror',
-                title: "Terror",
+                title: "Horror",
                 items: await basicFetch(`/discover/movie?with_genres=27&language=pt-BR&api_key=${API_KEY}`)
             },
             {
@@ -48,7 +48,7 @@ export default {
             },
             {
                 slug: 'documentary',
-                title: "Documentários",
+                title: "Documentary",
                 items: await basicFetch(`/discover/movie?with_genres=99&language=pt-BR&api_key=${API_KEY}`)
             }
         ]
