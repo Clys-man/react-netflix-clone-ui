@@ -1,5 +1,5 @@
 //KEY used in API request
-const API_KEY = 'd0d6231ec02e7e52e04a7a535b682ff0';
+const API_KEY = '';
 //Base of all Urls used in requests
 const API_BASE = 'https://api.themoviedb.org/3';
 
